@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江汉大学智造253班</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background: 
+                /* 主背景渐变 */
+                linear-gradient(135deg, #1a2a6c 0%, #2a4a8c 40%, #3a6acc 70%, #6a9eff 100%),
+                /* 几何图案叠加 */
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+                /* 纹理效果 */
+                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.03) 10px, rgba(255,255,255,0.03) 20px);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.92);
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        h1 {
+            color: #1a2a6c;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            font-size: 2.5em;
+        }
+        
+        h2 {
+            color: #2a4a8c;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        
+        .highlight {
+            background: linear-gradient(to right, #e6f2ff, #d0e2ff);
+            padding: 18px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 6px solid #3a6acc;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .highlight p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        
+        .photo-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .photo-frame {
+            background-color: #f5f9ff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 30%;
+            min-width: 250px;
+            margin: 0;
+            border: 2px solid #3a6acc;
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+        
+        .photo-frame:hover img {
+            transform: scale(1.05);
+        }
+        
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px;
+            font-size: 0.9em;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .photo-frame:hover .photo-caption {
+            transform: translateY(0);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.95em;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        @media (max-width: 900px) {
+            .photo-gallery {
+                justify-content: center;
+            }
+            
+            .photo-frame {
+                width: 45%;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .photo-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .photo-frame {
+                width: 90%;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>江汉大学</h1>
+        <h2>智能制造工程253班</h2>
+        
+        <div class="highlight">
+            <p><strong>智造253班 · 大家庭</strong></p>
+            <p><strong>大一 · 2025年</strong></p>
+        </div>
+        
+        <div class="photo-gallery">
+            <div class="photo-frame">
+                <img src="Image_1761833229897.jpg" >
+
+            </div>
+            
+            <div class="photo-frame">
+                <img src="Image_1761833232239.jpg" >
+
+            </div>
+            
+            <div class="photo-frame">
+                <img src="Image_1761833241065.jpg" >
+
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>江汉大学 · 智能制造学院 · 2025年</p>
+        </div>
+    </div>
+</body>
+</html>
